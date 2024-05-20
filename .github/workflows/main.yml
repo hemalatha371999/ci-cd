@@ -35,7 +35,7 @@ jobs:
         node-version: '20'
 
     - name: Install Serverless Framework Locally
-      run: npm install serverless
+      run: npm install -g serverless
 
     - name: Debug Environment Variables
       run: printenv | sort
