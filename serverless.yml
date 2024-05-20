@@ -1,4 +1,4 @@
-service: lambda-service
+service: lambda-service-github
 provider:
   name: aws
   runtime: nodejs20.x
