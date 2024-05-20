@@ -1,7 +1,7 @@
 service: lambda-service-github
 provider:
   name: aws
-  runtime: nodejs20.x
+  runtime: nodejs18.x
   region: ap-south-1
 functions:
   hello:
