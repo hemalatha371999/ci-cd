@@ -37,6 +37,9 @@ jobs:
     - name: Install Serverless Framework Locally
       run: npm install serverless
 
+    - name: Debug Environment Variables
+      run: printenv | sort
+
     - name: Deploy to AWS
       run: npx serverless deploy --stage production
       env:
