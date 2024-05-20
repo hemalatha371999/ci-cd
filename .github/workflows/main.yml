@@ -23,7 +23,6 @@ jobs:
 
   deploy:
     runs-on: ubuntu-latest
-
     needs: build
 
     steps:
@@ -34,6 +33,9 @@ jobs:
       uses: actions/setup-node@v3
       with:
         node-version: '20'
+
+    - name: Install Serverless Framework
+      run: npm install -g serverless
 
     - name: Deploy to AWS
       run: |
